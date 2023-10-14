@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Nuevo Cultivo</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    
+</head>
+
+<body>
+    <header>
+        <div class="container">
+                <img src="../assets/image/LOGO_SISTEMA_DE_RIEGO-.png" class="logo">
+            <nav>
+                <a href="../Menu_Principal.html">Inicio</a>
+
+                <a href="../../Sistema_Riego.html">Cerrar</a>
+            </nav>
+
+        </div>
+    </header>
+    <div class="container2">
+        <h2>Registre Datos del Nuevo Cultivo</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="nombre">Nombre del Cultivo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="tipoRiego">Tipo de Riego:</label>
+                <select id="tipoRiego" name="tipoRiego">
+                    <option value="riego1">Riego 1</option>
+                    <option value="riego2">Riego 2</option>
+                    <option value="riego3">Riego 3</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="fechaInicio">Fecha de Inicio:</label>
+                <input type="date" id="fechaInicio" name="fechaInicio" required>
+            </div>
+            <div class="form-group">
+                <label for="fechaFin">Fecha de Estimada de Fin:</label>
+                <input type="date" id="fechaFin" name="fechaFin" required>
+            </div>
+            <div class="form-group">
+                <label for="tipo">Tipo:</label>
+                <input type="text" id="tipo" name="tipo" required>
+            </div>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+
+</html>

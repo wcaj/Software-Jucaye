@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sistema de Riego </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap"
+        rel="stylesheet">
+        
+    <link rel="stylesheet" href="../src/assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+          
+                <img src="../src/assets/image/LOGO_SISTEMA_DE_RIEGO-.png" class="logo" alt="logo">
+        
+            <nav>
+                <a href="../src/Menu_Principal.html">Inicio</a>
+
+                <a href="../src/registros/Registro_cultivo.html">Ingresar Nuevo Cultivo</a>
+
+                <a href="../Sistema_Riego.html">Cerrar</a>
+            </nav>
+        </div>
+    </header>
+    <h1>Sistema de Control Riego Finca La Seiba</h1>
+    <main>
+        <section id="inicio">
+        </section>
+        <section id="servicios" class="seccion">
+            <div class="container">
+                <div class="row">
+                    <div class="columna columna-33 columna-mobile-100">
+                        <h3>Cultivo Cilantro</h3>
+                        <div class="bloque-servicio">
+                            <div class="bloque-img-servicio cuadrado-perfecto">
+                                <img src="../src/assets/image/cilantro.jpg" alt="nuevo">
+                            </div>
+                            <div class="bloque-contenido-servicio">
+
+                                <p>Informe de la ultima vez que se rego el cultivo hora 20:00pm
+                                    fecha 21/04/2023
+                                </p>
+                                <a href="../src/cultivos/Cultivo_Cilantro.html" class="boton boton-blanco">ver mas</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columna columna-33 columna-mobile-100">
+                        <h3>Cultivo Cebolla</h3>
+                        <div class="bloque-servicio">
+                            <div class="bloque-img-servicio cuadrado-perfecto">
+                                <img src="../src/assets/image/cebolla.jpg" alt="cebolla">
+                            </div>
+                            <div class="bloque-contenido-servicio">
+
+                                <p>Informe de la ultima vez que se rego el cultivo hora 20:00pm
+                                    fecha 21/04/2023</p>
+                                <a href="../src/cultivos/Cultivo_Cebolla.html" class="boton boton-blanco">ver mas</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columna columna-33 columna-mobile-100">
+                        <h3>Cultivo Yuca</h3>
+                        <div class="bloque-servicio">
+                            <div class="bloque-img-servicio cuadrado-perfecto">
+                                <img src="../src/assets/image/yuca.jpg" alt="yuca">
+                            </div>
+                            <div class="bloque-contenido-servicio">
+
+                                <p>Informe de la ultima vez que se rego el cultivo hora 20:00pm
+                                    fecha 21/04/2023</p>
+                                <a href="../src/cultivos/Cultivo_Yuca.html" class="boton boton-blanco">ver mas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicios" class="seccion">
+            <div class="container">
+                <div id="content">
+                    <div id="full-content">
+                        <div class="row">
+                            <div class="columna columna-33 columna-mobile-100">
+                                <h3>Cultivo Papa</h3>
+                                <div class="bloque-servicio">
+                                    <div class="bloque-img-servicio cuadrado-perfecto">
+                                        <img src="../src/assets/image/papa.png" alt="papa">
+                                    </div>
+                                    <div class="bloque-contenido-servicio">
+
+                                        <p>Informe de la ultima vez que se rego el cultivo hora 20:00pm
+                                            fecha 21/04/2023
+                                        </p>
+                                        <a href="../src/cultivos/Cultivo_Papa.html" class="boton boton-blanco">ver mas</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="columna columna-33 columna-mobile-100">
+                                <h3>Cultivo Cebolla</h3>
+                                <div class="bloque-servicio">
+                                    <div class="bloque-img-servicio cuadrado-perfecto">
+                                        <img src="../src/assets/image/cebolla.jpg" alt="cebolla">
+                                    </div>
+                                    <div class="bloque-contenido-servicio">
+
+                                        <p>Informe de la ultima vez que se rego el cultivo hora 20:00pm
+                                            fecha 21/04/2023</p>
+                                        <a href="../Cultivos/Cultivo_Cebolla.html" class="boton boton-blanco">ver
+                                            mas</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="columna columna-33 columna-mobile-100">
+                                <h3>Cultivo Yuca</h3>
+                                <div class="bloque-servicio">
+                                    <div class="bloque-img-servicio cuadrado-perfecto">
+                                        <img src="../src/assets/image/yuca.jpg" alt="yuca">
+                                    </div>
+                                    <div class="bloque-contenido-servicio">
+
+                                        <p>Informe de la ultima vez que se rego el cultivo hora 20:00pm
+                                            fecha 21/04/2023</p>
+                                        <a href="../src/cultivos/Cultivo_Yuca.html" class="boton boton-blanco">ver mas</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button id="toggle-button">Ver Más</button>
+        </section>
+    </main>
+    <script lng="JavaScript">
+        const content = document.getElementById('content');
+        const fullContent = document.getElementById('full-content');
+        const toggleButton = document.getElementById('toggle-button');
+        let isExpanded = false;
+
+        toggleButton.addEventListener('click', () => {
+            isExpanded = !isExpanded;
+
+            if (isExpanded) {
+                content.style.width = '100%';
+                content.style.height = '100%';
+                fullContent.style.display = 'block';
+                toggleButton.textContent = 'Ver Menos';
+            } else {
+                content.style.width = '0px';
+                content.style.height = '0px';
+                fullContent.style.display = 'none';
+                toggleButton.textContent = 'Ver Más';
+            }
+        });
+    </script>
+
+</body>
+
+</html>

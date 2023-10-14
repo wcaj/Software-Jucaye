@@ -1,0 +1,294 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Inicio de la pagina principal*/
+
+/* Contenedor principal*/
+body {
+  font-family: "crossorigin";
+  font-size: 14px;
+  background: url(../image/cultivo-vegetal.jpg);
+  opacity: 0.8;
+  background-size: 100%;
+  background-position: center;
+  display: block; 
+}
+
+/*Barra de Menu*/
+header {
+  font-size: 18px;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: black;
+  width: 100%;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .container .logo {
+  width: 150px;
+}
+
+header .container nav a {
+  color: rgb(0, 255, 200);
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+/*Titulo Sistema de Riego para la Finca la Seiba*/
+h1 {
+  background-color: white;
+  font-style: italic;
+  color: black;
+  text-align: center;
+  font-size: 4rem;
+  padding-top: 2%;
+  padding-bottom: 1%;
+}
+
+/*Subtitulo de los modulos.*/
+h3 {
+  background-color: white;
+  border: 10px solid white;
+  color: black;
+  font-weight: bold;
+  border-radius: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/*Inicio del main - sesion que contiene la infromacion sobre los modulos de Culltivo */
+
+.cuadrado-perfecto {
+  width: 100%;
+  padding-bottom: 100%;
+  position: relative;
+}
+
+.cuadrado-perfecto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*boton de ver mas del menu principal donde se encuentran los cultivos*/
+#full-content {
+  display: none;
+}
+
+button {
+  margin-top: 25px;
+  margin-left: 500px;
+  width: 100px;
+  padding: 15px;
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  width: 1140px;
+  margin: 0;
+  padding-right: 15px;
+  padding-left: 15px;
+  position: relative;
+}
+
+/**********************************************************************************************************************/
+
+/*Empieza el contenedor de los modulos*/
+
+/*Contenedor de los cultivos con sus columnas y dimenciones */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+/*Dimenciones de los modulos de los respectivos cultivos*/
+.columna {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.columna-33 {
+  width: 33.33%;
+}
+#servicios {
+  padding-top: 0%;
+  padding-left: 8%;
+}
+
+#servicios .bloque-servicio .bloque-img-servicio.cuadrado-perfecto {
+  padding-bottom: 50.25%;
+}
+#servicios .bloque-servicio .bloque-contenido-servicio {
+  padding: 15px;
+}
+
+.bloque-contenido-servicio {
+  background-color: white;
+}
+
+/*Tabla de los modulos.*/
+table {
+  background-color: white;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+/*Informacion de los modulos respectivos a cada cultivo*/
+.botones {
+  width: 600px;
+  margin: 0%;
+  margin-left: 500px;
+  margin-top: 0px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.camara {
+  width: 400px;
+  margin: 0%;
+  margin-top: 0%;
+  margin-left: 120px;
+  padding: 0px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+[type="button"] {
+  margin-left: 200px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  border-radius: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 150px;
+  text-decoration: none;
+
+}
+
+[type="button"] {
+  background: rgb(0, 204, 255);
+  box-shadow: 2px 2px 20px rgb(0, 162, 255);
+  opacity: .7;
+}
+
+/**********************************************************************************************************************/
+
+/*Registro de nuevos cultivos*/
+.container2 {
+	margin-top: 100px;
+	margin-left: 450px;
+	max-width: 400px;
+	background-color: #fff;
+	padding: 20px;
+	border: 1px solid #ccc;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+}
+
+.form-group {
+	margin-bottom: 15px;
+}
+
+label {
+	display: block;
+	font-weight: bold;
+}
+
+input[type="text"],
+select,
+input[type="date"] {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+input[type="submit"] {
+	background-color: #007BFF;
+	color: #fff;
+	padding: 10px 15px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: #0056b3;
+}
+
+/**********************************************************************************************************************/
+
+/* Reponsive para dispositivos moviles*/
+@media screen and (max-width: 767px) {
+  header .container nav {
+    position: fixed;
+    width: 313px;
+    height: 50px;
+    background-color: black;
+    transform: translateX(180px);
+  }
+ 
+  body {
+    background: url(../image/cultivo-vegetal.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+    display: block; 
+  }
+
+  .cuadrado-perfecto {
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+    display: block; 
+  }
+  
+  .cuadrado-perfecto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .container {
+    width: 650px;
+  }
+
+}

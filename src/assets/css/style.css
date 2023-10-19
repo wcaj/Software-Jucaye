@@ -3,8 +3,29 @@
 }
 
 /* Inicio de la pagina principal*/
+/*Bienvenidos*/
 
-/* Contenedor principal*/
+.container1{
+  width: 100%;
+  
+}
+
+.funsion{
+  width: 50%;
+  height: 100%;
+  background-color: red;
+  float: left;
+}
+.utilidades{
+  width: 50%;
+  height: 100%;
+  background-color: blue;
+  float: left;
+}
+
+/********************************************************************/
+/*Pagina menu principal*/
+/* Contenedor pag menu principal*/
 body {
   font-family: "crossorigin";
   font-size: 14px;

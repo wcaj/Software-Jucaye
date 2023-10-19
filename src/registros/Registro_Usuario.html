@@ -14,30 +14,33 @@
     <div class="containerregistro">
         <div class="form-background">
             <h2>Registro de Datos del Usuario</h2>
-            <form action="#" method="post">
+            
+            <form  action="#" method="post">
                 <label for="cedula">Cédula de Identidad:</label>
-                <input type="text" id="cedula" name="cedula" required>
+                <input class="cedula" type="text" id="cedula" name="cedula" required>
 
                 <label for="nombres">Nombres:</label>
-                <input type="text" id="nombres" name="nombres" required>
+                <input class="nombre" type="text" id="nombres" name="nombres" required>
 
                 <label for="apellidos">Apellidos:</label>
-                <input type="text" id="apellidos" name="apellidos" required>
+                <input class="apellido" type="text" id="apellidos" name="apellidos" required>
 
                 <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
-                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                <input class="fechan" type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
 
                 <label for="contrasena">Contraseña:</label>
                 <input class="clave" type="password" id="contrasena" name="contrasena" required>
                 <label for="roldusuario">Tipo de Rold:</label>
-                <select id="tiporold" name="tiporold">
+
+                <select class="tiporol" id="tiporold" name="tiporold">
                     <option value="rold1">Administrador</option>
                     <option value="rold2">Usuario</option>
                 </select>
+
                 <br><br>
-                <button type="submit">Registrar</button>
+                <button class="boton" type="submit">Registrar</button>
                 <br><br><br>
-                <a href="../../Sistema_Riego.html">Iniciar Sesion</a>
+                <a href="../login.html">Iniciar Sesion</a>
             </form>
         </div>
     </div>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tabla con Botones de Modificar</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Registro</th>
+            <th>Registro</th>
+            <th>Registro</th>
+        </tr>
+        <tr>
+            <td>Valor 1</td>
+            <td>Valor 2</td>
+            <td>Valor 3</td>
+            <td><button onclick="modificarRegistro(1)">Modificar</button></td>
+            <td><button onclick="modificarRegistro(2)">Modificar</button></td>
+            <td><button onclick="modificarRegistro(3)">Modificar</button></td>
+        </tr>
+        <tr>
+            <td>Valor 4</td>
+            <td>Valor 5</td>
+            <td>Valor 6</td>
+            <td><button onclick="modificarRegistro(4)">Modificar</button></td>
+            <td><button onclick="modificarRegistro(5)">Modificar</button></td>
+            <td><button onclick="modificarRegistro(6)">Modificar</button></td>
+        </tr>
+        <!-- Agrega más filas según tus necesidades -->
+    </table>
+
+    <script>
+        function modificarRegistro(registro) {
+            // Aquí puedes agregar el código JavaScript para modificar el registro
+            alert("Modificar registro " + registro);
+        }
+    </script>
+</body>
+</html>

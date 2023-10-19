@@ -1,12 +1,12 @@
 <?php
 
-$Host="mysql:host=localhost;dbname=jucayeconexion;port=3306";
+$Host="mysql:host=localhost;dbname=jucaye;port=3306";
 
 try {
-    $conCultivo=new PDO($Host,'root','110299');
+    $conCultivo=new PDO($Host,'root','');
 }
 catch (PDOException $pe){
-    die("No hay conexion en ". "jucayeconexion". ".". $pe->getMessage());
+    die("No hay conexion en ". "jucaye". ".". $pe->getMessage());
 }
 
 $consulta ="SELECT * FROM cultivo Order by Fecha_Inicio Desc";

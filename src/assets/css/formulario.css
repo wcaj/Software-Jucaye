@@ -87,7 +87,6 @@ h2:hover{
 	margin-bottom: 10px;
 	border-radius: 20px;
 	background:rgb(0, 255, 200);
-	box-shadow:2px 2px 20px rgb(0, 255, 200);
 	opacity: .7;
 	border: none;
 	cursor: pointer;
@@ -104,7 +103,7 @@ form a{
 	border-radius: 20px;
 	background:rgb(0, 255, 200);
 	opacity: .7;
-	padding:15px 50px;
+	padding:15px 47px;
 	border: none;
 	cursor: pointer;
 }
@@ -134,17 +133,17 @@ form a{
 }
 
 .boton {
-	width:200px;
-	height: 50px;
-	font-size: 18px;
-	font-weight: bold;
-	text-align:center;
-	text-transform:uppercase;
-	border-radius: 20px;
-	background:rgb(0, 255, 200);
-	box-shadow:2px 2px 20px rgb(0, 255, 200);
-	opacity: .7;
-	border: none;
-	cursor: pointer;
+	color: black;
+    	font-size: 18px;
+    	font-weight: bold;
+    	text-align:center;
+    	text-transform:uppercase;
+    	text-decoration: none;
+    	border-radius: 20px;
+    	background:rgb(0, 255, 200);
+    	opacity: .7;
+    	padding:15px 67px;
+    	border: none;
+    	cursor: pointer;
 }
 

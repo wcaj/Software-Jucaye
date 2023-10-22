@@ -5,24 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro Nuevo Cultivo</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/modulos.css">
     
 </head>
 
 <body>
     <header>
-        <div class="container">
-                <img src="../assets/image/LOGO_SISTEMA_DE_RIEGO-.png" class="logo">
-            <nav>
-                <a href="../Menu_Principal.html">Inicio</a>
-
-                <a href="../Menu_Principal.html">Cerrar</a>
-            </nav>
-
-        </div>
-    </header>
+        <img src="../../src/assets/image/LOGO_SISTEMA_DE_RIEGO-.png" class="logo" alt="logo">
+          <nav>
+             <ul>
+              <li><a href="../../src/Menu_Principal.html">Sistema de Riego</a></li>
+              <li><a href="../../index.html">Cerrar</a></li>
+             </ul>
+          </nav>
+  </header>
     <div class="container2">
-        <h2>Registre Datos del Nuevo Cultivo</h2>
+        <h5>Registre Datos del Nuevo Cultivo</h5>
         <form action="#" method="post">
             <div class="form-group">
                 <label for="nombre">Nombre del Cultivo:</label>
@@ -48,7 +46,7 @@
                 <label for="tipo">Tipo:</label>
                 <input type="text" id="tipo" name="tipo" required>
             </div>
-            <input type="submit" value="Enviar">
+            <input class="enviar" type="submit" value="Enviar">
         </form>
     </div>
 </body>

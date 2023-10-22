@@ -21,7 +21,9 @@ body{
 	line-height:1.5em;
 	height: 100vh;
 }
-
+.logo {
+	width: 250px;
+}
 /*Contenedor que contiene el bienvenida*/
 .container {
 	position: relative;
@@ -30,7 +32,6 @@ body{
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-
 }
 
 /*titulo del formulario, Bienvenidos*/
@@ -42,13 +43,12 @@ h2 {
 	border-radius: 20px;
 	padding: 20px 30px;
 }
-
 h2:hover{
 	text-shadow:2px 2px 10px rgb(0, 255, 200);
 }
 
 /* Campos del formulario usuario-contrasena*/
-.usuario {
+.usuario, .pass {
 	height:50px;
 	width: 250px;
 	background-color: white;
@@ -57,24 +57,11 @@ h2:hover{
 	border-radius: 20px;
 	border: none white;
 	margin-top: 20px;
-	margin-bottom: 10px;
 	transition: .4s;
 	outline:none;
 	cursor: pointer;
 }
-.pass{
-	height:50px;
-	width: 250px;
-	background-color: white;
-	text-align: center;
-	font-size: 20px;
-	border-radius: 20px;
-	border: none;
-	margin-bottom: 10px;
-	transition: .4s;
-	outline:none;
-	cursor: pointer;
-}
+
 
 /*Boton formulario de acceder */
 .button {
@@ -103,8 +90,21 @@ form a{
 	text-decoration: none;
 	border-radius: 20px;
 	background:rgb(0, 255, 200);
-	opacity: .7;
 	padding:15px 50px;
+	border: none;
+	cursor: pointer;
+}
+.Iniciar{
+	color: black;
+	font-size: 18px;
+	font-weight: bold;
+	text-align:center;
+	text-transform:uppercase;
+	text-decoration: none;
+	border-radius: 20px;
+	background:rgb(0, 255, 200);
+	padding:15px 50px;
+	opacity: .7;
 	border: none;
 	cursor: pointer;
 }
@@ -117,14 +117,22 @@ form a{
 	height: 650px;
 	font-weight: bold;
 	margin: 0 auto;
-	background-color: white;
+	background-color:rgb(185, 254, 248);
 	border-radius: 10px;
+	opacity: .7;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
+h3 {
+	padding: 25px;
+	color:black ;
+	text-align: center;
+	font-size: 25px;
+}
+
 .cedula, .nombre, .apellido, .fechan, .clave, .tiporol{
 	height:30px;
 	width: 290px;
-	background-color:white;
+	background-color: transparent;
 	text-align: center;
 	font-size: 15px;
 	border-radius: 20px;
@@ -132,7 +140,6 @@ form a{
 	transition: .4s;
 	cursor: pointer;
 }
-
 .boton {
 	width:200px;
 	height: 50px;
@@ -142,9 +149,14 @@ form a{
 	text-transform:uppercase;
 	border-radius: 20px;
 	background:rgb(0, 255, 200);
-	box-shadow:2px 2px 20px rgb(0, 255, 200);
-	opacity: .7;
 	border: none;
 	cursor: pointer;
+}
+/*boton de olvido contraseña */
+.olvido {
+	color: black;
+	background-color:white;
+	text-transform: capitalize;
+	font-size: 20px;
 }
 

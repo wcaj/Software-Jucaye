@@ -1,45 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sistema de Riego Automatizado</title>
-    <link rel="stylesheet" href="assets/css/formulario.css" type="text/css"/>
+    <link rel="stylesheet" href="assets/css/formulario.css" type="text/css" />
     <script lenguaje="JavaScript">
-        function go(){
-            if (document.form.password.value=='1234' && document.form.login.value=='Usuario'){ 
-                    document.form.submit(); 
-                } 
-                else{ 
-                     alert("Porfavor ingrese, nombre de usuario y contraseña correctos."); 
-                } 
-        } 
+      function go() {
+        if (
+          document.form.password.value == "1234" &&
+          document.form.login.value == "Usuario"
+        ) {
+          document.form.submit();
+        } else {
+          alert("Porfavor ingrese, nombre de usuario y contraseña correctos.");
+        }
+      }
     </script>
-</head>
-    <body>
-        <img src="assets/image/LOGO_SISTEMA_DE_RIEGO-.png" alt="">
-            <div class="container">
-                    <div >
-                        <h2>Bienvenido Ingresar</h2>
+  </head>
+  <body>
+    <img src="assets/image/LOGO_SISTEMA_DE_RIEGO-.png" alt="" />
+    <div class="container">
+      <div>
+        <h2>Bienvenido Ingresar</h2>
 
-                        <form name=form action="Menu_Principal.html">    
+        <form name="form" action="Menu_Principal.html">
+          <input
+            class="usuario"
+            type="text"
+            name="login"
+            placeholder="Usuario"
+          />
+          <br />
 
-                            <input class="usuario" type="text" name="login" placeholder="Usuario">
-                            <br>
+          <input
+            class="pass"
+            type="Password"
+            name="password"
+            placeholder="Contraseña"
+          />
+          <br />
 
-                            <input class="pass" type="Password" name="password" placeholder="Contraseña">
-                            <br><br>
+          <input class="button" onclick="go()" type="button" value="Acceder" />
+          <br /><br />
 
-                            <input class="button" onclick=go() type=button value=Acceder>
-                            <br><br>
-
-                            <a class="Iniciar" href="registros/Registro_Usuario.html">Registrar</a>
-                           
-                        </form>
-                        <br>
-                        <a class="olvido" href="../src/registros/Recuperar_Contraseña.html">¿Olvidaste tu contraseña?</a>
-                    </div>
-            </div>
-    </body>
+          <a class="Iniciar" href="registros/Registro_Usuario.html"
+            >Registrar</a
+          >
+        </form>
+        <br />
+        <a class="olvido" href="../src/registros/Recuperar_Contraseña.html"
+          >¿Olvidaste tu contraseña?</a
+        >
+      </div>
+    </div>
+  </body>
 </html>

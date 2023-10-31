@@ -1,0 +1,211 @@
+
+*{
+margin: 0;
+padding: 0;
+}
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+}
+/*Contenedor principal - estructura del login*/
+body {
+    background-color:#333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imagen {
+    display: flex;
+    align-items: center;
+	justify-content: center;
+}
+img{
+    width: 50%;  
+    padding-bottom: 30px;
+}
+/*Contenedor que muestra y centra la infromacion del login*/
+.containerlogin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*Contenedor que centra y da los border al cuadro del login*/
+.contenedorlogin{
+    width: 400px;
+    height: 650px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-top: 4px solid #32c0c1;
+    border-right: 4px solid #32c0c1;
+    border-bottom: 4px solid #32c0c1;
+    border-left: 4px solid #32c0c1;
+    border-radius: 10px;
+}
+/*Titulo de Bienvenido Ingresar*/
+h2 {
+	color:white ;
+	text-align: center;
+	font-size: 30px;
+}
+h2:hover{
+	text-shadow:2px 2px 10px #5de4e4;
+}
+/*Contenedor de infromacion de Usuario y Contraseña*/
+.usuario, .pass {
+	width: 250px;
+	height:50px;
+	background-color: #50eee1;
+	text-align: center;
+	font-size: 20px;
+	border-radius: 15px;
+	margin-top: 15px;
+	outline:none;
+	cursor: pointer;
+}
+/*Botones de Acceder - Registrar y olvido Contraseña del login*/
+.acceder {
+    background-color: #50eec9;
+    width:150px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bolder;
+    text-align:center;
+    text-transform:uppercase;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+}
+.acceder:hover{
+    color:white;
+    background:#68fdec;
+	box-shadow:2px 2px 20px aqua;
+}
+.registrar{
+    background:#00ffc8;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    text-align:center;
+    text-transform:uppercase;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-left: 50px;
+    padding:15px 20px;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+}
+.registrar:hover {
+    color:white;
+    background:#68fdec;
+	box-shadow:2px 2px 20px aqua;
+}
+.olvido {
+    margin-top: 20px;
+	color:white;
+	text-transform: capitalize;
+	font-size: 16px;
+}
+.olvido:hover{
+    text-shadow:2px 2px 20px aqua;
+}
+/****************************************************************************************/
+/*Contenedor de Recuperr contraseña*/
+/*Contenedor Principal*/
+.containerecuperar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*Contenedor central que muesta los border de toda la informacion*/
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    height: 650px;
+    border-top: 4px solid #32c0c1;
+    border-right: 4px solid #32c0c1;
+    border-bottom: 4px solid #32c0c1;
+    border-left: 4px solid #32c0c1;
+    border-radius: 5px;
+}
+/*Titulo de los contenedores de recuperar contraseña*/
+h4 {
+    text-transform: uppercase;
+	color:white;
+	text-align: center;
+	font-size: 25px;
+    margin-bottom: 20px;
+}
+h4:hover{
+	text-shadow:2px 2px 10px #5de4e4;
+}
+/*Contenedor de la infromacion de recuperar contraseña*/
+label {
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+}
+/*Clases del nombre y fehca del recuperar contraseña*/
+.name, .date{
+    width: 230px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: #50eee1;
+    text-align:center;
+    outline:none;
+    cursor: pointer;
+}
+/*Clases de roles del login*/
+.rol{
+    width: 230px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #50eee1;
+    text-align:center;
+    outline:none;
+    cursor: pointer;
+}
+/*Boton del Registrar y volver del login de Recuperar Contraseña*/
+.btn {
+    background-color: #50eec9;
+    width:150px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bolder;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 35px;
+    border: none;
+    cursor: pointer; 
+}
+.btn:hover {
+    color:white;
+    background:#68fdec;
+	box-shadow:2px 2px 20px aqua;
+}
+.volver {
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.volver:hover {
+    color:white;
+	text-shadow:2px 2px 20px aqua;
+}
+

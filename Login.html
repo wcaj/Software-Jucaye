@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de Riego Automatizado</title>
+    <link
+      rel="stylesheet"
+      href="src/assets/css/login.css"
+      type="text/css"
+    />
+    <script lenguaje="JavaScript">
+      function go() {
+        if (
+          document.form.password.value == "1234" &&
+          document.form.login.value == "Usuario"
+        ) {
+          document.form.submit();
+        } else {
+          alert("Por favor ingrese, nombre de usuario y contraseña correctos.");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="containerlogin">
+      
+      <div class="contenedorlogin">
+        <div class="imagen">
+          <img src="src/assets/img/SRA-logo.png" alt="" />
+        </div>
+        <h2>Bienvenido</h2>
+
+        <form name="form" action="Menu_Principal_Suelo.html">
+          <input
+            class="usuario"
+            type="text"
+            name="login"
+            placeholder="Usuario"
+          />
+          <br />
+
+          <input
+            class="pass"
+            type="Password"
+            name="password"
+            placeholder="Contraseña"
+          />
+          <br />
+
+          <input class="acceder" onclick="go()" type="button" value="Acceder" />
+          <br /><br />
+
+          <a class="registrar" href="src/registros/Registro_usuario.html"
+            >Registrar</a
+          >
+        </form>
+        <br />
+        <a class="olvido" href="src/registros/Recuperar_Contraseña.html"
+          >¿Olvidaste tu contraseña?</a
+        >
+        <a class="olvido" href="Index.html"
+          >Volver</a
+        >
+      </div>
+    </div>
+  </body>
+</html>

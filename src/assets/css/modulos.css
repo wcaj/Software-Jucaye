@@ -39,30 +39,18 @@ nav ul li a {
     color:black;
     text-decoration: none;
 }
-/*Iconos de las clases de la barra de menu*/
-.iniciologo {
-    width: 45px;
-    margin-left: 20px;
-    margin-top: 4%;
+/*Iconos  de la barra de menu de los modulos de cultivos */
+.iniciologo, .riego, .cerrarlogo {
+    width: 50px;
+    margin-top: 4px;
 }
-.riego{
+
+/* Iconos de barra de menu del modulo de registro de nuevo cultivo.*/
+.logoinicio, .logocerrar {
     width: 45px;
-    margin-left: 20px;
-    margin-top: 4%;
+    margin-top: 10%;
 }
-.cerrarlogo{
-    width: 45px;
-    margin-left: 20px;
-    margin-top: 4%;
-}
-.logocerrar{
-    width: 45px;
-    margin-top: 6%;
-}
-.logoinicio {
-    width: 45px;
-    margin-top: 6%;
-}
+
 /* Contenedor de los modulos de cada uno de los cultivos*/
 .contenedor {
     width: 300px;
@@ -85,7 +73,7 @@ h1 {
     cursor: pointer;
 }
 h1:hover {
-    text-shadow: 2px 2px 10px #32c0c1;
+    text-shadow: 2px 2px 10px #fdfefe;
 }
 /*subtitulos*/
 h2, h3{
@@ -149,6 +137,7 @@ table, td, th {
 /*Modulo de Registro de Nuevos Cultivos*/
 /*Contenedor Principal*/
 .contregicultivo {
+    margin-top: 3%;
     display: flex;
     align-items: center;
     justify-content: center;

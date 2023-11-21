@@ -3,6 +3,7 @@
     padding: 0;
 }
 body, html {
+    font-family:'Times New Roman', Times, serif;
     width: 100vw;
     height: 100vh;
 }
@@ -11,16 +12,16 @@ html {
     -webkit-text-size-adjust: 100%
 }
 body {
-    background-color: #333;
+    background-color:#f9ecc9;
 }
 /*Barra de Menu de cada uno de los modulos de cultivos y Registro de Nuevo Cultivo*/
 .headerinicio {
-    background-color: black;
+    background-color:#5e7153;
     width: 100vw;
 }
 /*imagen del logo SRA de la barra de Menu*/
 .logo {
-    width: 100px;
+    width: 5rem;
     margin-left: 50px;
 }
 nav{
@@ -32,28 +33,30 @@ nav ul li {
     display: block;
 }
 nav ul li a {
-    margin-top: 6%;
     margin-right: 2rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     display: block;
-    color:#38e9dd;
+    color:black;
     text-decoration: none;
 }
-/*Iconos de las clases de la barra de menu*/
+/*Iconos  de la barra de menu de los modulos de cultivos */
 .iniciologo, .riego, .cerrarlogo {
-    margin-top: 10px;
     width: 50px;
-    margin-left: 10px;
+    margin-top: 4px;
 }
+
+/* Iconos de barra de menu del modulo de registro de nuevo cultivo.*/
+.logoinicio, .logocerrar {
+    width: 45px;
+    margin-top: 10%;
+}
+
 /* Contenedor de los modulos de cada uno de los cultivos*/
 .contenedor {
     width: 300px;
     margin-top: 4%;
     margin-left: 10%;
-    border-top: 4px solid #32c0c1;
-    border-right: 4px solid #32c0c1;
-    border-bottom: 4px solid #32c0c1;
-    border-left: 4px solid #32c0c1;
+    background-color: #d9d9d9;
     border-radius: 5px;
 }
 /*tabla del cultivo de los cultivos*/
@@ -63,25 +66,25 @@ nav ul li a {
 }
 /*titulos*/
 h1 {
-    color:#38e9dd;
+    color:black;
     font-size: 50px;
     text-align: center;
     font-style: italic;
     cursor: pointer;
 }
 h1:hover {
-    text-shadow: 2px 2px 10px #32c0c1;
+    text-shadow: 2px 2px 10px #fdfefe;
 }
 /*subtitulos*/
 h2, h3{
-    color: white;
+    color: black;
     font-size: 25px;
     font-style: italic;
     text-align: center;
     margin-bottom: 2%;
 }
 h4, p {
-    color: white;
+    color: black;
     font-size: 20px;
     text-align: center;
     margin-top: 2%;
@@ -89,7 +92,7 @@ h4, p {
 }
 /*Informacion sobre las tablas de los modulos de cultivos */
 table, td, th {
-    background-color: #fdfefe;
+    background-color: #d9d9d9;
     border-collapse: collapse;
     padding: 10px;
     text-align: center;
@@ -101,7 +104,7 @@ table, td, th {
     font-size: 18px;
     font-weight: bold;
     text-align:center;
-    background:#00ffc8;
+    background-color: #ccb99d;
     border-radius: 10px;
     margin-left: 230px;
     margin-bottom: 2%;
@@ -111,16 +114,14 @@ table, td, th {
     transition: .5s;
 }
 .riegoactivar:hover {
-    color:white;
-    background:#68fdec;
-	box-shadow:2px 2px 20px aqua;
+    box-shadow: 3px 3px 22px #ccb99d;
 }
 .riegodesactivar{
     color: black;
     font-size: 18px;
     font-weight: bold;
     text-align:center;
-    background:#00ffc8;
+    background-color: #ccb99d;
     border-radius: 10px;
     margin-left: 215px;
     margin-bottom: 2%;
@@ -130,14 +131,13 @@ table, td, th {
     transition: .5s;
 }
 .riegodesactivar:hover {
-    color:white;
-    background:#68fdec;
-	box-shadow:2px 2px 20px aqua;
+    box-shadow: 3px 3px 22px #ccb99d;
 }
 /**************************************************************************************/
 /*Modulo de Registro de Nuevos Cultivos*/
 /*Contenedor Principal*/
 .contregicultivo {
+    margin-top: 3%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -146,10 +146,7 @@ table, td, th {
 .regiscultivo {
     width: 350px;
     height: 600px;
-    border-top: 5px solid #32c0c1;
-    border-right: 5px solid #32c0c1;
-    border-bottom: 5px solid #32c0c1;
-    border-left: 5px solid #32c0c1;
+    background-color: #d9d9d9;
     border-radius: 10px;
 }
 /*Contenedorde la imagen del modulo de SRA*/
@@ -164,7 +161,7 @@ img{
     padding-bottom: 10px;
 }
 label {
-    color: white;
+    color: black;
     display: block;
     text-align: center;
     font-size: 20px;
@@ -174,7 +171,7 @@ label {
     width: 250px;
     height: 40px;
     text-align: center;
-    background-color: #50eee1;
+    background-color: #a7cbbc;
     border-radius: 10px;
     margin-left: 14%;
     outline:none;
@@ -185,17 +182,15 @@ label {
     width:150px;
     height: 50px;
     font-size: 18px;
-    background-color: #50eec9;
+    background-color: #ccb99d;
     font-weight: bolder;
     text-align:center;
     border-radius: 10px;
-   margin-top: 5%;
-   margin-left: 27%;
+    margin-top: 5%;
+    margin-left: 27%;
     border: none;
     cursor: pointer; 
 }
 .enviar:hover {
-    color:white;
-    background:#68fdec;
-	box-shadow:2px 2px 20px aqua;
+    box-shadow: 3px 3px 22px #ccb99d;
 }

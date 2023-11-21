@@ -15,17 +15,16 @@
             <nav>
                 <ul>
                     <li>
-                        <a>Inicio</a>
                         <a href="../../Menu_Sistema_Riego.php">
                             <img class="iniciologo" src="../assets/img/logos/inicio.png"/>
                         </a>
+                        <a>Inicio</a>
                       </li>
                       <li>
-                        <a>Cerrar</a>
                         <a href="../../Menu_Sistema_Riego.php">
                             <img class="cerrarlogo" src="../assets/img/logos/cerrar.png">
                         </a>
-                        
+                        <a>Cerrar</a>
                       </li>
                 </ul>
             </nav>

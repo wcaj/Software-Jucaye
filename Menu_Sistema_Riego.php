@@ -52,7 +52,7 @@
                 fecha 21/04/2023.
               </p>
             </div>
-           
+           <br>
           <br>
               <a class="vermas" href="src/cultivos/Cultivo_Cilantro.php">Ver Mas</a>
           </div>
@@ -69,6 +69,7 @@
               </p>
             </div>
           <br>
+          <br>
               <a class="vermas" href="src/cultivos/Cultivo_Cebolla.php">Ver Mas</a>
           </div>
 
@@ -84,6 +85,7 @@
               </p>
             </div>
           <br>
+          <br>
               <a class="vermas" href="src/cultivos/Cultivo_Papa.php">Ver Mas</a>
           </div>
 
@@ -98,6 +100,7 @@
                 fecha 21/04/2023.
               </p>
             </div>
+          <br>
           <br>
               <a class="vermas" href="src/cultivos/Cultivo_Yuca.php">Ver Mas</a>
           </div>

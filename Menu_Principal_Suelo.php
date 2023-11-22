@@ -53,6 +53,7 @@
                 </tr>
               </table>
           <br>
+          <br>
               <a class="vercultivos" href="Menu_Sistema_Riego.php">Ver Cultivos</a>
           </div>
 
@@ -74,6 +75,7 @@
               </tr>
             </table>
             <br>
+            <br>
             <a class="vercultivos" href="Menu_Sistema_Riego.php">Ver Cultivos</a>
           </div>
 
@@ -94,6 +96,7 @@
                   <td>5 metros de largo con 6 de ancho.</td>
               </tr>
             </table>
+            <br>
             <br>
             <a class="vercultivos" href="Menu_Sistema_Riego.php">Ver Cultivos</a>
           </div>

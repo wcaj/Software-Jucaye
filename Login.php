@@ -31,14 +31,14 @@
 
         <input class="pass" type="Password" name="password" placeholder="Contraseña" />
         <br />
-        
+
         <button class="acceder">Acceder</button>
         <br /><br />
 
         <a class="registrar" href="src/registros/Registro_usuario.php">Registrar</a>
       </form>
       <br />
-      
+
       <a class="olvido" href="src/registros/Recuperar_Contraseña.php">¿Olvidaste tu contraseña?</a>
       <a class="olvido" href="Index.php">Volver</a>
     </div>

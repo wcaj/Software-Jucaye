@@ -13,23 +13,23 @@
         <nav>
           <ul>
             <li>
-              <a href="">Inicio</a>
               <a href="Menu_Principal_Suelo.php"
                 ><img class="inicio" src="src/assets/img/logos/inicio.png"
               /></a>
+              <a href="">Inicio</a>
             </li>
            
             <li>
-              <a href="src/registros/Registro_Cultivo.php">Registrar</a>
               <a href="src/registros/Registro_Cultivo.php"
-                ><img class="riegohoja" src="src/assets/img/logos/cultivo-ingresar.png"
+                ><img class="riegohoja" src="src/assets/img/logos/hojas.png"
               /></a>
+              <a href="src/registros/Registro_Cultivo.php">Registrar</a>
             </li>
             <li>
-              <a href="index.php">Cerrar</a>
               <a href="index.php"
                 ><img class="cerrarlogo" src="src/assets/img/logos/cerrar.png"
               /></a>
+              <a href="index.php">Cerrar</a>
             </li>
           </ul>
         </nav>
@@ -46,10 +46,13 @@
             <div>
               <img class="cilantro" src="src/assets/img/cultivos/cilantro.jpg">
             </div>
-            <p>
-              Informe de la ultima vez que se rego el cultivo hora 20:00pm
-              fecha 21/04/2023.
-            </p>
+            <div class="parrafo">
+              <p>
+                Informe de la ultima vez que se rego el cultivo hora 20:00pm
+                fecha 21/04/2023.
+              </p>
+            </div>
+           <br>
           <br>
               <a class="vermas" href="src/cultivos/Cultivo_Cilantro.php">Ver Mas</a>
           </div>
@@ -59,10 +62,13 @@
             <div>
               <img class="cebolla" src="src/assets/img/cultivos/cebolla.jpg">
             </div>
-            <p>
-              Informe de la ultima vez que se rego el cultivo hora 20:00pm
-              fecha 21/04/2023.
-            </p>
+            <div class="parrafo">
+              <p>
+                Informe de la ultima vez que se rego el cultivo hora 20:00pm
+                fecha 21/04/2023.
+              </p>
+            </div>
+          <br>
           <br>
               <a class="vermas" href="src/cultivos/Cultivo_Cebolla.php">Ver Mas</a>
           </div>
@@ -72,10 +78,13 @@
             <div>
               <img class="papa" src="src/assets/img/cultivos/papa.png">
             </div>
-            <p>
-              Informe de la ultima vez que se rego el cultivo hora 20:00pm
-              fecha 21/04/2023.
-            </p>
+            <div class="parrafo">
+              <p>
+                Informe de la ultima vez que se rego el cultivo hora 20:00pm
+                fecha 21/04/2023.
+              </p>
+            </div>
+          <br>
           <br>
               <a class="vermas" href="src/cultivos/Cultivo_Papa.php">Ver Mas</a>
           </div>
@@ -85,10 +94,13 @@
             <div>
               <img class="yuca" src="src/assets/img/cultivos/yuca.jpg">
             </div>
-            <p>
-              Informe de la ultima vez que se rego el cultivo hora 20:00pm
-              fecha 21/04/2023.
-            </p>
+            <div class="parrafo">
+              <p>
+                Informe de la ultima vez que se rego el cultivo hora 20:00pm
+                fecha 21/04/2023.
+              </p>
+            </div>
+          <br>
           <br>
               <a class="vermas" href="src/cultivos/Cultivo_Yuca.php">Ver Mas</a>
           </div>

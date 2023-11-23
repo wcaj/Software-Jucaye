@@ -30,7 +30,7 @@ img{
 }
 .container{
     width: 400px;
-    height: 710px;
+    height: 750px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,7 +54,7 @@ label {
     text-align: center;
     font-size: 20px;
 }
-.cedula, .nombre, .apellido, .fechan, .clave, .tiporol{
+.cedula, .nombre, .apellido, .fechan, .direccion, .clave, .tiporol{
     width: 250px;
     height: 40px;
     background-color: #a7cbbc;

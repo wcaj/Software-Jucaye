@@ -36,8 +36,8 @@
 
             <label for="role">Rol</label>
             <select class="rol" id="role" name="role" required>
-              <option value="admin">Administrador</option>
-              <option value="user">Usuario</option></select
+              <option value="1">Administrador</option>
+              <option value="2">Usuario</option></select
             ><br />
             <br />
 

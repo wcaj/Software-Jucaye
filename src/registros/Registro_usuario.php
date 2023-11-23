@@ -20,7 +20,7 @@
         </div>
         <h3>Ingresar Datos</h3>
 
-        <form action="#" method="post">
+        <form action="../../admin/Registro_usuario.php" method="post">
           <label for="cedula">Cédula de Identidad:</label>
           <input
             class="cedula"
@@ -56,6 +56,14 @@
             name="fecha_nacimiento"
             required
           />
+          <label for="direccion">Direccion:</label>
+          <input
+            class="direccion"
+            type="text"
+            id="direccion"
+            name="direccion"
+            required
+          />
 
           <label for="contrasena">Contraseña:</label>
           <input
@@ -65,11 +73,11 @@
             name="contrasena"
             required
           />
-          <label for="roldusuario">Tipo de Rold:</label>
+          <label for="roldusuario">Tipo de Rol:</label>
 
-          <select class="tiporol" id="tiporold" name="tiporold">
-            <option value="rold1">Administrador</option>
-            <option value="rold2">Usuario</option>
+          <select class="tiporol" id="tiporol" name="tiporol">
+            <option value="1">Administrador</option>
+            <option value="2">Usuario</option>
           </select>
 
           <br /><br />

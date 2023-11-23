@@ -189,7 +189,7 @@ label {
     margin-top: 5%;
     margin-left: 27%;
     border: none;
-    cursor: pointer; 
+    cursor: pointer;
 }
 .enviar:hover {
     box-shadow: 3px 3px 22px #ccb99d;

@@ -8,4 +8,3 @@ function conectarDataBase() {
         echo "No se Conecto";
     }
     return $database;
-}

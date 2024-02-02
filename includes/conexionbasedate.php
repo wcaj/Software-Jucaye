@@ -3,7 +3,7 @@
 class conexionbasedate{
     private $host = "localhost";
     private $user = "root";
-    private $password = "110299";
+    private $password = "";
     private $database = "jucaye";
     private $conect;
 

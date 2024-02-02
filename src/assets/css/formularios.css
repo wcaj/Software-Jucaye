@@ -3,13 +3,13 @@
     padding: 0;
 }
 body, html {
+    font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
     width: 100vw;
     height: 100vh;
 }
 /*Modulo de Regitrar nuevo Usuario*/
 body {
     background-color: #f9ecc9;
-    font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
     display: flex;
     align-items: center;
 	justify-content: center;
@@ -21,7 +21,6 @@ body {
 }
 img{
     width: 35%;  
-    padding-bottom: 10px;
 }
 .containeregistro {
     display: flex;
@@ -29,34 +28,33 @@ img{
     justify-content: center;
 }
 .container{
-    width: 400px;
-    height: 750px;
+    width: 350px;
+    height: 720px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     background-color: #d9d9d9;
-    border-radius: 10px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.40) 0px 5px 15px;
+    box-sizing: border-box;
+    padding: 20px 30px;
 }
 h3 {
     text-transform: uppercase;
 	color:black;
 	text-align: center;
 	font-size: 25px;
-    margin-bottom: 10px;
-}
-h3:hover{
-	text-shadow:2px 2px 10px #5de4e4;
 }
 label {
     color: black;
     display: block;
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
 }
 .cedula, .nombre, .apellido, .fechan, .direccion, .clave, .tiporol{
-    width: 250px;
-    height: 40px;
+    width: 315px;
+    height: 30px;
     background-color: #a7cbbc;
     border: none;
     text-align:center;
@@ -64,28 +62,25 @@ label {
     cursor: pointer;
 }
 .boton {
-    width:150px;
+    width:315px;
     height: 50px;
-    font-size: 18px;
+    font-size: 20px;
     background-color: #ccb99d;
     font-weight: bolder;
     text-align:center;
     border-radius: 10px;
-    margin-left: 40px;
     border: none;
-    cursor: pointer; 
+    cursor: pointer;
 }
 .boton:hover {
     box-shadow: 3px 3px 22px #ccb99d;
 }
 .inicio{
+    margin-top: 25px;
     color: black;
-    font-size: 18px;
-    font-weight: bolder;
+    padding-inline: 130px;
+    text-transform: none;
     text-decoration: none;
+    font-size: 20px;
     cursor: pointer;
-    margin-left: 90px;
-}
-.inicio:hover {
-    box-shadow: 3px 3px 22px #ccb99d;
 }

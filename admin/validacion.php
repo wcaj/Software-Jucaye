@@ -9,7 +9,7 @@ if ($_SERVER ['REQUEST_METHOD'] === 'POST') {
     session_start();
     $_SESSION ['usuario'] = $Nombre;
 
-    $query = "SELECT * FROM usuarios WHERE Nombre = '$Nombre' and Clave ='$contraseña'";
+    $query = "SELECT * FROM usuarios WHERE Nombre = '$Nombre' and contraseña ='$contraseña'";
 
     if (mysqli_num_rows(mysqli_query($database, $query))) {
         header ("location:../Menu_Principal_Suelo.php");

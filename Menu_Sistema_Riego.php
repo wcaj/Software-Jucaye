@@ -14,9 +14,9 @@
           <ul>
             <li>
               <a href="Menu_Principal_Suelo.php"
-                ><img class="inicio" src="src/assets/img/logos/inicio.png"
+                ><img class="inicio" src="src/assets/img/logos/home.png"
               /></a>
-              <a href="">Inicio</a>
+              <a href="Menu_Principal_Suelo.php">Inicio</a>
             </li>
            
             <li>
@@ -25,9 +25,10 @@
               /></a>
               <a href="src/registros/Registro_Cultivo.php">Registrar</a>
             </li>
+            
             <li>
-              <a href="index.php"
-                ><img class="cerrarlogo" src="src/assets/img/logos/cerrar.png"
+              <a href="Index.php"
+                ><img class="logocerrar" src="src/assets/img/logos/cerrar.png"
               /></a>
               <a href="index.php">Cerrar</a>
             </li>
@@ -52,7 +53,7 @@
                 fecha 21/04/2023.
               </p>
             </div>
-           <br>
+           
           <br>
               <a class="vermas" href="src/cultivos/Cultivo_Cilantro.php">Ver Mas</a>
           </div>
@@ -69,7 +70,6 @@
               </p>
             </div>
           <br>
-          <br>
               <a class="vermas" href="src/cultivos/Cultivo_Cebolla.php">Ver Mas</a>
           </div>
 
@@ -85,7 +85,6 @@
               </p>
             </div>
           <br>
-          <br>
               <a class="vermas" href="src/cultivos/Cultivo_Papa.php">Ver Mas</a>
           </div>
 
@@ -100,7 +99,6 @@
                 fecha 21/04/2023.
               </p>
             </div>
-          <br>
           <br>
               <a class="vermas" href="src/cultivos/Cultivo_Yuca.php">Ver Mas</a>
           </div>

@@ -3,8 +3,8 @@
   padding: 0;
 }
 
-body,
-html {
+body, html {
+  font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
   width: 100vw;
   height: 100vh;
 }
@@ -21,8 +21,8 @@ body {
   justify-content: center;
 }
 img {
-  width: 50%;
-  padding-bottom: 30px;
+  width: 45%;
+  padding-bottom: 25px;
 }
 /*Contenedor que muestra y centra la infromacion del login*/
 .containerlogin {
@@ -32,29 +32,28 @@ img {
 }
 /*Contenedor que centra y da los border al cuadro del login*/
 .contenedorlogin {
-  width: 400px;
-  height: 650px;
+  width: 350px;
+  height: 600px;
   text-transform: uppercase;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   background-color: #d9d9d9;
-  border-radius: 10px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.40) 0px 5px 15px;
+  box-sizing: border-box;
+  padding: 20px 30px;
 }
 /*Titulo de Bienvenido Ingresar*/
 h2 {
   color: black;
   text-align: center;
-  font-size: 30px;
-}
-h2:hover {
-  text-shadow: 2px 2px 10px #5de4e4;
+  font-size: 35px;
 }
 /*Contenedor de infromacion de Usuario y Contraseña*/
-.usuario,
-.pass {
-  width: 250px;
+.usuario, .pass {
+  width: 310px;
   height: 50px;
   background-color: #a7cbbc;
   text-align: center;
@@ -62,20 +61,34 @@ h2:hover {
   border: none;
   margin-top: 15px;
   cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+}
+input::placeholder{
+  color:black; 
+}
+.usuario::placeholder{
+  background-image: url(../img/logos/inicio.png);
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: 5rem center;
+}
+.pass::placeholder{
+  background-image: url(../img/logos/contrasena.png);
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: 4.5rem center;
 }
 /*Botones de Acceder - Registrar y olvido Contraseña del login*/
 .acceder {
   background-color: #ccb99d;
-  width: 150px;
-  height: 50px;
-  font-size: 18px;
+  width: 310px;
+  height: 45px;
+  font-size: 20px;
   font-weight: bolder;
   text-align: center;
-  text-transform: uppercase;
   border-radius: 10px;
   margin-top: 30px;
-  margin-left: 50px;
-  margin-right: 30px;
   margin-bottom: 10px;
   border: none;
   cursor: pointer;
@@ -87,14 +100,12 @@ h2:hover {
 .registrar {
   background-color: #ccb99d;
   color: black;
-  font-size: 18px;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bolder;
   text-decoration: none;
+  text-transform:none;
   border-radius: 10px;
-  margin-left: 50px;
-  padding: 15px 20px;
+  padding: 12px 115px;
   border: none;
   cursor: pointer;
   transition: 0.5s;
@@ -103,14 +114,16 @@ h2:hover {
   box-shadow: 3px 3px 22px #ccb99d;
 }
 .olvido {
-  margin-top: 20px;
+  margin-top: 25px;
   color: black;
-  text-transform: capitalize;
-  font-size: 16px;
+  text-transform: none;
+  text-decoration: none;
+  font-size: 20px;
 }
 .olvido:hover {
   box-shadow: 3px 3px 22px #ccb99d;
 }
+
 /****************************************************************************************/
 /*Contenedor de Recuperr contraseña*/
 /*Contenedor Principal*/
@@ -121,49 +134,53 @@ h2:hover {
 }
 /*Contenedor central que muesta los border de toda la informacion*/
 .container {
+  width: 350px;
+  height: 600px;
+  text-transform: uppercase;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 400px;
-  height: 650px;
   background-color: #d9d9d9;
-  border-radius: 5px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.40) 0px 5px 15px;
+  box-sizing: border-box;
+  padding: 20px 30px;
 }
 /*Titulo de los contenedores de recuperar contraseña*/
 h4 {
-  text-transform: uppercase;
   color:black;
   text-align: center;
-  font-size: 25px;
-  margin-bottom: 20px;
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
 }
-h4:hover {
-  text-shadow: 2px 2px 10px #5de4e4;
-}
+
 /*Contenedor de la infromacion de recuperar contraseña*/
 label {
   color: black;
   display: block;
   text-align: center;
+  text-transform: none;
   font-size: 20px;
 }
 /*Clases del nombre y fehca del recuperar contraseña*/
-.name,
-.date {
-  width: 230px;
+.name,.date {
+  width: 300px;
   height: 40px;
-  border: none;
+  font-size: 16px;
   background-color: #a7cbbc;
   text-align: center;
+  border: none;
   outline: none;
   cursor: pointer;
 }
 /*Clases de roles del login*/
 .rol {
-  width: 230px;
-  height: 30px;
- border: none;
+  width: 300px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
   background-color: #a7cbbc;
   text-align: center;
   outline: none;
@@ -171,28 +188,26 @@ label {
 }
 /*Boton del Registrar y volver del login de Recuperar Contraseña*/
 .btn {
-  background-color: #ccb99d;
-  width: 150px;
+  width: 300px;
   height: 50px;
-  font-size: 18px;
+  font-size: 20px;
+  background-color: #ccb99d;
   font-weight: bolder;
   border-radius: 10px;
-  margin-top: 10px;
-  margin-left: 35px;
   border: none;
   cursor: pointer;
 }
 .btn:hover {
     box-shadow: 3px 3px 22px #ccb99d;
 }
-
 .volver {
   color: black;
-  font-size: 18px;
+  font-size: 20px;
+  margin-right: 15px;
+  text-transform: none;
   font-weight: bolder;
   text-decoration: none;
   cursor: pointer;
-  margin-right: 20px;
 }
 .volver:hover {
     box-shadow: 3px 3px 22px #ccb99d;

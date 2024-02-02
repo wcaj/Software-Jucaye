@@ -1,61 +1,32 @@
 <?php
-require '../includes/config/database.php';
+/*Rutas de conexion */
+require_once "../includes/conexionbasedate.php";
+require_once "clases/Clase_Auth.php";
 
-$database = conectarDataBase();
+/*conexion y Autentificacion */
+$conexion = new conexionbasedate();
+$Auth= new Auth($conexion);
 
-/* Verificacion de la informacion que se ingresa a la base de datos*/
+/*Verificacion de informacion enviada en el formulario */
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $cedula = $_POST['cedula'];
-    $nombre = $_POST['nombres'];
-    $apellido = $_POST['apellidos'];
-    $fechanacimiento = $_POST['fecha_nacimiento'];
-    $contraseña = $_POST ['contrasena'];
-    $rol = $_POST['tiporol'];
-    $direccion = $_POST ['direccion'];
-    $fecha_hoy = date('Y-m-d');
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-/*Muestreo de los errores encontrados en los campos de formulacion */
+    /* Datos del formulario */
+    $cedula = $_POST["cedula"];
+    $nombre = $_POST["nombres"];
+    $apellido = $_POST["apellidos"];
+    $fecha_nacimiento = $_POST["fecha_nacimiento"];
+    $direccion = $_POST["direccion"];
+    $encriptar_clave = $_POST["contrasena"];
+    $rol = $_POST["tiporol"];
+ 
+    /*Insertar nuevo usuario a la base de datos */
 
-    $error = [];
-    
-    if (!$cedula) {
-        $error[] = "El campo se encuentra vacido";
-    }
-    
-    if (!$nombre) {
-        $error[] = "El campo se encuentra vacido";
-    }
-    
-    if (!$apellido) {
-        $error[] = "El campo se encuentra vacido";
-    }
-    
-    if (!$fechanacimiento) {
-        $error[] = "El campo se encuentra vacido";
-    }
-
-    if (!$direccion) {
-        $error[] = "El campo  se encuentra vacido";
-    }
-
-    if (!$contraseña) {
-        $error[] = "El campo  se encuentra vacido";
-    }
-
-    if (!$rol) {
-        $error[] = "El campo se encuentra vacido";
-    }
-
-    $query = "INSERT INTO `jucaye`.`usuarios` (`Cedula`, `Nombre`, `Apellido`, `Fecha_Nacimiento`, `Direccion`, `Clave`, `Creado_En`, `Actualizado_En`, `Roles_Id`) VALUES ('$cedula', '$nombre', '$apellido', '$fechanacimiento', '$direccion', '$contraseña', '$fecha_hoy', '$fecha_hoy', '$rol');
-    ";
-    echo $query;
-
-    if (!empty($error) or !mysqli_query($database, $query)) {
-        echo "Error al ingresar la informacion";
-    } else {
-        echo "Datos ingresados correctamente";
-        header ("Location: ../src/registros/Registro_Usuario.php");
+    if ($Auth->Registro_Usuario($cedula, $nombre, $apellido, $fecha_nacimiento, $direccion, $encriptar_clave, $rol)) {
+       header ("Location: ../Login.php");
+    }else {
+        $_SESSION ["Error"] = 'Registro de Usuario Incorrecto ☺️';
+        header("location:../src/regirtos/Registro_usuario.php");
         exit();
     }
 }

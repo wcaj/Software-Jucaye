@@ -1,6 +1,6 @@
 <?php 
 function conectarDataBase() {
-    $database=mysqli_connect('localhost', 'root', '110299', 'jucaye');
+    $database=mysqli_connect('localhost', 'root', '110299', 'jucayeconexion');
     
     if($database) {
         return $database;

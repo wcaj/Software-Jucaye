@@ -1,9 +1,10 @@
+
 *{
     margin: 0;
     padding: 0;
 }
 body, html {
-    font-family:'Times New Roman', Times, serif;
+    font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
     width: 100vw;
     height: 100vh;
 }
@@ -40,13 +41,29 @@ nav ul li a {
     text-decoration: none;
 }
 /*Estilo de las clases de los iconos de cada uno de subtitulos de la barra de menu*/
+
+/*Iconos de la Barra de menu del Sistema de Control del Suelo.*/
 .riegologo, .cerrarlogo{
     width: 45px;
-    margin-top: 6%;
+    margin-top: 7%;
+    margin-left: 7%;
 }
+/*Iconos de la Barra de menu del Sistema de Control de cultivo.*/
 .inicio {
     width: 50px;
 }
+.riegohoja {
+    width: 45px;
+    margin-left: 20%;
+    margin-top: 4%;
+}
+.logocerrar{
+    width: 45px;
+    margin-left: 10%;
+    margin-top: 4%;
+}
+
+/*Iconos de Barra de Menu del Index principal*/
 .userlogo {
     width: 35px;
     margin-left: 40px;
@@ -57,11 +74,7 @@ nav ul li a {
    margin-left: 20px;
    margin-top: 4%;
 }
-.riegohoja {
-    width: 45px;
-    margin-left: 20px;
-    margin-top: 4%;
-}
+/***MODULO PRINCIPAL DEL INDEX DONDE ESTA LA INFOAMCION DE BIENVENIDA***/
 
 /*Contenido principal del modulo de bienvenida*/
 h1 {
@@ -72,9 +85,6 @@ h1 {
     font-style: italic;
     cursor: pointer;
 }
-h1:hover {
-    text-shadow: 2px 2px 10px #fdfefe;
-}
 .contenido {
     display: grid;
     gap: 2rem;
@@ -84,7 +94,7 @@ h1:hover {
 .logobienvenida{
     width: 100px;
 }
-.informacionSRA{
+.informacionSRA, .informacionjucaye{
     margin-left: 15px;
     margin-right: 15px;
     font-size: 20px;
@@ -96,14 +106,6 @@ h1:hover {
 }
 .jucaye {
     width: 20rem;
-
-}
-.informacionjucaye {
-    font-size: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
 }
 /*Pie de pagina*/
 footer{
@@ -113,20 +115,19 @@ footer{
     justify-content: center;
     flex-direction: column;
     margin-left: 12px;
-
 }
 .whatsapp, .facebook, .instagram  {
     width: 45px;
     margin-top: 4%;
     margin-left: 20px;
 }
-
+/*****************************************************************************************/
 /*Contenido del Modulo de Menu principal-Parcelas*/
 main {
     font-family:'Times New Roman', Times, serif;
     display: block;
 }
-/*Contenedor principal del modulo del suelo*/
+/*Contenedor principal del modulo de sistema de control del suelo*/
 .contenedorprincipal {
     display: grid;
     gap: 2rem;
@@ -150,12 +151,10 @@ main {
 /*Subtitulos*/
 h2 {
     color:black;
-    font-size: 30px;
-    font-style: italic;
+    font-size: 35px;
     text-align: center;
     margin-bottom: 10px;
 }
-/*Subtitulos*/
 /*Informacion de los las tablas de cada una de las parcelas*/
 table, th, td {
     background-color: #d9d9d9;
@@ -167,21 +166,19 @@ table, th, td {
 }
 /*Botones de informacion de las parcelas (VerCultivos)---Sistema de Riego cultivo (Ver Mas)*/
 .vercultivos, .vermas {
-    background-color: #ccb99d;
+    background-color:#ccb99d;
     color: black;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 25px;
     text-align:center;
-    text-transform:uppercase;
     text-decoration: none;
     border-radius: 10px;
-    padding:15px 20px;
+    padding:15px 30px;
     border: none;
     cursor: pointer;
     transition: .5s;
 }
 .vercultivos:hover{
-    box-shadow: 3px 3px 22px #ccb99d;
+    box-shadow: 3px 3px 20px #ccb99d;
 }
 .vermas:hover {
     box-shadow: 3px 3px 22px #ccb99d;
@@ -196,7 +193,7 @@ table, th, td {
 }
 /*Contenedor Principal del modulo de sistema de Riego de cada uno de los modulos*/
 .contcultivos {
-    margin-top: 8%;
+    margin-top: 5%;
     flex-wrap: wrap;
     display: flex;
     align-items: center;
@@ -222,65 +219,145 @@ table, th, td {
 
 /**************************************************************/
 /* para 768px o menos */
-@media screen and (max-width: 768px) {
-    /* ocultar el menu y mostrar un boton para desplegarlo */
-    nav {
-      display: none;
-    }
-    .menu-btn {
-      display: block;
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      width: 50px;
-      height: 50px;
-      background: url no-repeat center;
-      background-size: 30px;
-      cursor: pointer;
-    }
-    /* ajustar el tamaño de las fuentes e imagenes */
-    h1 {
-      font-size: 40px;
-    }
-    h2 {
-      font-size: 25px;
-    }
-    .logo, .riegologo, .cerrarlogo, .inicio, .userlogo, .registrarlogo, .riegohoja {
-      width: 40px;
+@media screen and (max-width: 600px) {
+/*Menu de index principal*/
+     /*Barra de Menu*/
+     .headerinicio {
+        background-color:#5e7153;
+        width: 100vw;
     }
     nav ul li a {
-      font-size: 1.2rem;
+        margin-right: 2rem;
+        font-size: 1rem;  
     }
-    p {
-      font-size: 16px;
+    /*Imagen del SRA de la barra de menu*/
+    .logo {
+        width: 4rem;
     }
-  }
-  
-  /* para 480px o menos */
-  @media screen and (max-width: 480px) {
-    /* cambiar el diseño del grid principal a una sola columna */
+    /*Iconos de Barra de Menu del Index principal*/
+    .userlogo {
+        width: 30px;
+        margin-left: 30px;
+        margin-top: 4%;
+    }
+    .registrarlogo {
+        width: 30px;
+        margin-left: 20px;
+        margin-top: 4%;
+    }
+    /*Contenido principal del modulo de bienvenida*/
+    h1 {
+        font-size: 30px;
+        margin-top: 2%; 
+    }
+    h2{
+        font-size: 25px;
+    }
+    p{
+        font-size: 16px;
+    }
+    .contenido {
+        gap: 2rem;
+        grid-template-columns: none;
+        margin-top: 3%;
+    }
+    .logobienvenida, .jucaye{
+        width: 40%;
+    }
+   /***********************************************************************************/
+   /***Menu de Sistema de Control del Suelo***/
+
+    /*Iconos de la Barra de menu del Sistema de control del Suelo. */
+    .riegologo, .cerrarlogo{
+        width: 35px;
+        margin-left: 5%;
+    }
+    /*Modulo de sistema de control del suelo*/
     .contenedorprincipal {
-      grid-template-columns: 1fr;
+        display: block;
+        grid-template-columns: none; 
     }
-    /* cambiar el diseño del grid de los cultivos a dos columnas */
+    /***********************************************************************************/
+    /*Iconos de la Barra de menu del Sistema de control de Cultivos. */
+    .inicio {
+        width: 40px;
+        margin-left: 5%;
+    }
+    .riegohoja {
+        width: 35px;
+        margin-left: 20%;
+    }
+    .logocerrar{
+        width: 35px;
+        margin-left: 10%;
+    }
+    /*Contenedor principal de los Modulos de Sistema de control de los cultivos*/
     .contenedor {
-      grid-template-columns: repeat(2,1fr);
+        display: block;
+        grid-template-columns: none;
     }
-    /* ajustar el tamaño de las fuentes e imagenes */
-    h1 {
-      font-size: 30px;
+    .parrafo{
+        width: 350px;
     }
-    h2 {
-      font-size: 20px;
-    }
-    .logo, .riegologo, .cerrarlogo, .inicio, .userlogo, .registrarlogo, .riegohoja {
-      width: 30px;
+}
+
+/********************************************************************************************/
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    /*Barra de Menu*/
+    .headerinicio {
+        background-color:#5e7153;
+        width: 100vw;
     }
     nav ul li a {
-      font-size: 1rem;
+        margin-right: 2rem;
+        font-size: 1.2rem;  
     }
-    p {
-      font-size: 14px;
+    /*Imagen del SRA de la barra de menu*/
+    .logo {
+        width: 4rem;
     }
-  }
+    /*Iconos de la Barra de menu del Sistema de control del Suelo. */
+    .riegologo, .cerrarlogo{
+        width: 35px;
+        margin-top: 5%;
+        margin-left: 15%;
+    }
   
+    /*****************************************************************************************/
+    /*Menu Sistema de Control del Suelo*/
+    .contenedorprincipal {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .contcultivo1, .contcultivo2, .contcultivo3 {
+        margin-left: 4%;
+        margin-right: 5%;
+    }
+    .parcela {
+        height: 14rem;
+    }
+
+    /******************************************************************************************/
+    /*Iconos de la Barra de menu del Sistema de control de Cultivos. */
+    .inicio {
+        width: 40px;
+        margin-left: 5%;
+    }
+    .riegohoja {
+        width: 35px;
+        margin-left: 25%;
+    }
+    .logocerrar{
+        width: 35px;
+        margin-left: 15%;
+    }
+   
+    /*Contenido de los Modulos de Sistema de Riego-Cultivos*/
+    .contenedor {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .parrafo{
+        width: 250px;
+    }
+}
+
